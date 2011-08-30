@@ -2,6 +2,4 @@
 
 class Photo < Hashie::Mash
   
-  
-  
 end

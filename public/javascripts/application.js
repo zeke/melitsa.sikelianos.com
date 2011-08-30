@@ -1,2 +1,19 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(function() {
+  
+  // $('body').isotope({
+  //   itemSelector : '.photo',
+  //   layoutMode : 'masonry'
+  // });
+
+  $("img").rotate({ 
+    bind: { 
+      click : function() { 
+        var r = $(this).data('rotation');
+        r = (r == null) ? 90 : r+90;
+        $(this).data('rotation', r);
+        $(this).rotate({animateTo:r});
+      }
+    } 
+  });
+  
+});

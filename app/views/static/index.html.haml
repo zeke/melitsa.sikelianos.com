@@ -1,2 +1,9 @@
+
+%h1 Melitsa Sikelianos
+
 - @photos.each do |photo|
-  = image_tag (photo.url_m)
+  .photo
+    = image_tag (photo.url_z)
+    
+%h2
+  = link_to "Fin.", "http://www.flickr.com/photos/sikelianos/sets/72157627365540737/"

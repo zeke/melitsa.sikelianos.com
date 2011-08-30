@@ -3,9 +3,24 @@
 
 body
   padding: 20px
-  background: white image_url('bg.gif') repeat
+  //background: white image_url('bg.gif') repeat
+  background: white
+  font-family: "Helvetica Neue", Helvetica, Arial, sans
   
-  img
-    padding: 10px
-    margin: 30px
-    @include box-shadow(#CCC, 0, 2px, 5px, 3px)
+  h1, h2
+    font-weight: bold
+    color: black
+    text-align: center
+    font-size: 3em
+    margin: 300px 0
+    
+  h2, h2 a
+    text-decoration: none
+    color: black
+  
+  .photo
+    margin: 250px
+    text-align: center
+    img
+      cursor: pointer
+      @include box-shadow(rgba(black, 0.2), 1px, 1px, 3px, 3px)
