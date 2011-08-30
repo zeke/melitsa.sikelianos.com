@@ -1,9 +1,4 @@
 $(function() {
-  
-  // $('body').isotope({
-  //   itemSelector : '.photo',
-  //   layoutMode : 'masonry'
-  // });
 
   $("img").rotate({ 
     bind: { 
